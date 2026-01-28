@@ -398,7 +398,7 @@ Provisionals filed. Full specifications available under NDA.
 
 1. **Review THE_PROOF.md** — See how this dissolves known problems
 2. **Study THE_VOCABULARY.md** — Learn the precise terms
-3. **Contact for integration** — steven@echosphere.io
+3. **Contact for integration** — The Themis Project (themis@echosphere.io)
 
 ---
 

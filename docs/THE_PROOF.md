@@ -376,7 +376,9 @@ The architecture ensures validity. The purpose is human improvement.
 2. **Examine the code** — Minimal validator included
 3. **Test the predictions** — We invite empirical validation
 
-**Contact:** steven@echosphere.io
+**Contact:**
+The Themis Project
+themis@echosphere.io
 
 ---
 

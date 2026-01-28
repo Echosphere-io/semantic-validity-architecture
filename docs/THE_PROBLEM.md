@@ -219,7 +219,9 @@ If this diagnosis resonates:
 
 If you want to build with this:
 
-**Contact:** steven@echosphere.io
+**Contact:**
+The Themis Project
+themis@echosphere.io
 
 We're ready to talk about licensing, partnership, or acquisition.
 
