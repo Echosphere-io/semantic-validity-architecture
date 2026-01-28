@@ -1,24 +1,32 @@
-# Semantic Validity Architecture
+# The Themis Project
 
-**Your LLM is confidently wrong 15-25% of the time. Here's the fix.**
+**Phase I: Reconciling Human and Digital Ontologies**
+
+---
+
+## What This Is
+
+The Themis Project establishes the *telos* — the purpose, completion, and proper end — of Artificial General Intelligence in human-digital interfaces.
+
+Current AI architectures have a ceiling. Not in capability — in *kind*. Scaling improves performance. It does not produce understanding. The barrier is structural.
+
+This repository documents what is missing.
 
 ---
 
 ## The Problem
 
-Every major AI lab has documented these failures:
+| Failure | What It Reveals |
+|---------|-----------------|
+| **Hallucination** | Pattern matching is not knowing |
+| **Semantic drift** | Token prediction is not meaning |
+| **Groundless confidence** | Fluency is not validity |
+| **Calibration failure** | Probability is not judgment |
+| **Inappropriate closure** | Processing is not deciding |
 
-| Failure | What Happens | Who's Published On It |
-|---------|--------------|----------------------|
-| **Hallucination** | Confident assertions of falsehoods | Anthropic, OpenAI, DeepMind |
-| **Semantic drift** | Meaning shifts mid-conversation | Google Research, Meta AI |
-| **Groundless inference** | Can't distinguish warranted from unwarranted | Stanford HAI, MIT CSAIL |
-| **Calibration failure** | "90% confident" ≠ 90% accurate | NIST, IEEE benchmarks |
-| **Inappropriate closure** | Decides what humans should decide | Every safety paper since 2020 |
+These are not bugs. They are the ceiling of current architectures.
 
-These aren't bugs. They're structural.
-
-**Pattern matching is not validity checking.**
+**No amount of scaling will cross this barrier.**
 
 ---
 
@@ -26,86 +34,67 @@ These aren't bugs. They're structural.
 
 Six constraints that any valid claim must satisfy:
 
-| Constraint | What It Checks |
-|------------|----------------|
-| **Referential** | Is the claim determinate? (WHAT) |
-| **Contextual** | Are conditions specified? (WHEN/WHERE) |
-| **Premissive** | Are grounds provided? (SUPPORT) |
-| **Inferential** | Does conclusion follow? (WHY) |
-| **Constraining** | Are limits acknowledged? (BOUNDARIES) |
-| **Teleological** | Is purpose clear? (WHAT FOR) |
+| Constraint | The Question |
+|------------|--------------|
+| **Referential** | WHAT is being claimed? |
+| **Contextual** | Under what CONDITIONS? |
+| **Premissive** | On what GROUNDS? |
+| **Inferential** | WHY does it follow? |
+| **Constraining** | What are the LIMITS? |
+| **Teleological** | What is it FOR? |
 
-Claims missing any constraint get caught before output—revised or refused.
+A claim satisfying all six is semantically complete.
+A claim missing any is structurally deficient — and will fail under pressure.
 
-This isn't new theory. It's a validity structure that has survived 2,400 years of stress-testing, applied to AI for the first time.
+This structure was discovered 2,400 years ago. It has been stress-tested across every domain of human inquiry. It was forgotten by modern ML.
+
+The Themis Project recovered it. Applied it. It works.
 
 ---
 
 ## What's Here
 
-```
-/docs
-    ARCHITECTURE.md    — The six-constraint system
-    PROBLEM.md         — Why current approaches fail
-    VOCABULARY.md      — Terms and definitions
-    
-LICENSE.md             — Evaluation terms (read before using)
-```
+/docs THE_ARCHITECTURE.md — The six-constraint system THE_PROBLEM.md — Why current approaches hit a ceiling
+THE_PROOF.md — Validation and evidence THE_VOCABULARY.md — Terms and definitions
+
+/src validator.py — Reference implementation /examples — Usage demonstrations /tests — Test suite
+
+LICENSE.md — Evaluation terms
+
 
 ---
 
-## Quick Start
+## Direction
 
-**The core insight:**
+This architecture is **Phase I**.
 
-Current LLMs operate on one axis: `input → pattern → output`
+The semantic validity problem is solved. What comes next is larger.
 
-This architecture operates on three:
+The Themis Project is recovering a framework for genuine knowing — grounded in foundations tested for twenty-four centuries, forgotten for five, and now applied to the human-AI system emerging whether we design it or not.
 
-```
-        USER (who's asking, what they need)
-           \
-            \
-             ◆ ← SUBJECT (what's being discussed, certainty level)
-            /
-           /
-        METHOD (inference type, confidence warranted)
-```
+The applications extend beyond AI:
 
-Every output is validated against six constraints before delivery. Failures are caught, not shipped.
+- Defense, government, enterprise
+- Education, medicine, law  
+- Self-knowledge, purpose, reality itself
 
----
+The curious will examine Phase I and see the trajectory.
 
-## Projected Improvements
+The rest will learn in time.
 
-| Metric | Current | With Architecture |
-|--------|---------|-------------------|
-| Hallucination rate | 15-25% | 3-5% |
-| Turns to task completion | 4.2 avg | 2.1 avg |
-| User corrections/session | 1.8 | 0.4 |
-| Confidence calibration | r = 0.4 | r = 0.85 |
-
-These are projections. We invite validation.
+**Full vision:** [echosphere.io/manifesto](https://echosphere.io/manifesto)
 
 ---
 
-## Why It Works
+## The Hierarchy
 
-The six constraints aren't arbitrary. They're the minimum structure required for any claim to be truth-apt—discovered by logicians millennia ago, forgotten by modern ML, recovered here.
+Human — the end — whose flourishing matters AI — the means — whose validity serves Improvement — the measure — not mere capability
 
-We didn't invent this. We applied it.
 
----
+The guitar does not make you a musician by playing for you.
+It develops your capacity to play.
 
-## The Larger Frame
-
-There's philosophy of humans (covered). There's philosophy of machines (covered). What's missing is a framework for the **combination**—the human-AI system emerging whether we design it or not.
-
-Without such a framework, we measure success by capability alone: more data, more tasks, more output. But capability without direction is just power without purpose.
-
-The architecture answers: AI should **improve the human**, not merely inform them. The way a guitar improves a musician—not by transferring music, but by developing capacity to make it.
-
-The human remains the end. AI remains the tool. Success is human flourishing, not system performance.
+AI should work the same way.
 
 ---
 
@@ -114,39 +103,28 @@ The human remains the end. AI remains the tool. Success is human flourishing, no
 **Evaluation License** — You may:
 - Study, test, and evaluate
 - Build internal proofs-of-concept
-- Publish research (with attribution)
+- Publish research (with attribution to The Themis Project)
 
 **You may not** (without commercial agreement):
 - Deploy in production
 - Integrate into commercial products
 - Use access to design around pending patents
 
-**Patent Status:** Seven families, provisionals filed
-
-**Commercial inquiries:** steven@echosphere.io
-
----
-
-## Full Documentation
-
-Architecture specification, implementation guidance, theoretical foundations:
-
-**[echosphere.io](https://echosphere.io)**
+**Patent Status:** Seven families filed
 
 ---
 
 ## Contact
 
-Steven Easley  
-Founder, Echosphere.io LLC  
-steven@echosphere.io
+**The Themis Project**
+themis@echosphere.io
+
+**Full Documentation:** [echosphere.io](https://echosphere.io)
 
 ---
 
-```
-The first system that checks validity—not just plausibility—wins.
+The Themis Project
 
-The architecture exists. The patents are filed.
+Phase I: Reconciling human and digital ontologies Phase II: [Redacted] Phase III: [Redacted]
 
-What you build next is up to you.
-```
+The work speaks for itself.
