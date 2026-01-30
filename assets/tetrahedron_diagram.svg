@@ -1,0 +1,145 @@
+<svg viewBox="0 0 500 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glow effect for vertices -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="500" height="480" fill="#f8f9fa"/>
+  
+  <!-- 
+    CORRECT MAPPING:
+    4 Vertices = Components being related
+    6 Edges = The six constraints (relations between components)
+    
+    Vertices:
+    - Apex: CLAIMANT (who asserts)
+    - Left: GROUNDS (what supports)
+    - Right: PURPOSE (what it's for)  
+    - Bottom: SUBJECT (what's discussed)
+    
+    Edges (6 constraints):
+    - Claimant to Subject: REFERENTIAL
+    - Claimant to Grounds: PREMISSIVE
+    - Claimant to Purpose: TELEOLOGICAL
+    - Subject to Grounds: CONTEXTUAL
+    - Subject to Purpose: INFERENTIAL
+    - Grounds to Purpose: CONSTRAINING
+  -->
+  
+  <!-- Coordinates -->
+  <!-- Apex (Claimant): 250, 60 -->
+  <!-- Left (Grounds): 80, 320 -->
+  <!-- Right (Purpose): 420, 320 -->
+  <!-- Bottom (Subject): 250, 420 -->
+  
+  <!-- EDGES with constraint labels -->
+  
+  <!-- Edge 1: Claimant to Subject - REFERENTIAL (front vertical) -->
+  <line x1="250" y1="60" x2="250" y2="420" 
+        stroke="#1e3a5f" stroke-width="2.5"/>
+  <text x="270" y="240" 
+        font-family="Georgia, serif" font-size="11px" fill="#8b0000" font-weight="600">
+    REFERENTIAL
+  </text>
+  
+  <!-- Edge 2: Claimant to Grounds - PREMISSIVE (left edge) -->
+  <line x1="250" y1="60" x2="80" y2="320" 
+        stroke="#1e3a5f" stroke-width="2.5"/>
+  <text x="120" y="175" transform="rotate(-50, 120, 175)"
+        font-family="Georgia, serif" font-size="11px" fill="#8b0000" font-weight="600">
+    PREMISSIVE
+  </text>
+  
+  <!-- Edge 3: Claimant to Purpose - TELEOLOGICAL (right edge) -->
+  <line x1="250" y1="60" x2="420" y2="320" 
+        stroke="#1e3a5f" stroke-width="2.5"/>
+  <text x="365" y="175" transform="rotate(50, 365, 175)"
+        font-family="Georgia, serif" font-size="11px" fill="#8b0000" font-weight="600">
+    TELEOLOGICAL
+  </text>
+  
+  <!-- Edge 4: Subject to Grounds - CONTEXTUAL (bottom left) -->
+  <line x1="250" y1="420" x2="80" y2="320" 
+        stroke="#1e3a5f" stroke-width="2.5"/>
+  <text x="140" y="385" transform="rotate(30, 140, 385)"
+        font-family="Georgia, serif" font-size="11px" fill="#8b0000" font-weight="600">
+    CONTEXTUAL
+  </text>
+  
+  <!-- Edge 5: Subject to Purpose - INFERENTIAL (bottom right) -->
+  <line x1="250" y1="420" x2="420" y2="320" 
+        stroke="#1e3a5f" stroke-width="2.5"/>
+  <text x="355" y="385" transform="rotate(-30, 355, 385)"
+        font-family="Georgia, serif" font-size="11px" fill="#8b0000" font-weight="600">
+    INFERENTIAL
+  </text>
+  
+  <!-- Edge 6: Grounds to Purpose - CONSTRAINING (back edge, dashed for depth) -->
+  <line x1="80" y1="320" x2="420" y2="320" 
+        stroke="#64748b" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="250" y="308" text-anchor="middle"
+        font-family="Georgia, serif" font-size="11px" fill="#8b0000" font-weight="600">
+    CONSTRAINING
+  </text>
+  
+  <!-- VERTICES (Components) -->
+  
+  <!-- Apex - Claimant -->
+  <circle cx="250" cy="60" r="10" fill="#1e3a5f" filter="url(#glow)"/>
+  <text x="250" y="35" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="13px" font-weight="700" fill="#1a1a1a">
+    CLAIMANT
+  </text>
+  <text x="250" y="48" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="10px" fill="#64748b" font-style="italic">
+    who asserts
+  </text>
+  
+  <!-- Left - Grounds -->
+  <circle cx="80" cy="320" r="10" fill="#1e3a5f" filter="url(#glow)"/>
+  <text x="40" y="345" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="13px" font-weight="700" fill="#1a1a1a">
+    GROUNDS
+  </text>
+  <text x="40" y="358" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="10px" fill="#64748b" font-style="italic">
+    what supports
+  </text>
+  
+  <!-- Right - Purpose -->
+  <circle cx="420" cy="320" r="10" fill="#1e3a5f" filter="url(#glow)"/>
+  <text x="460" y="345" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="13px" font-weight="700" fill="#1a1a1a">
+    PURPOSE
+  </text>
+  <text x="460" y="358" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="10px" fill="#64748b" font-style="italic">
+    what it's for
+  </text>
+  
+  <!-- Bottom - Subject -->
+  <circle cx="250" cy="420" r="10" fill="#1e3a5f" filter="url(#glow)"/>
+  <text x="250" y="450" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="13px" font-weight="700" fill="#1a1a1a">
+    SUBJECT
+  </text>
+  <text x="250" y="463" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="10px" fill="#64748b" font-style="italic">
+    what's discussed
+  </text>
+  
+  <!-- Legend -->
+  <rect x="150" y="5" width="200" height="20" fill="none"/>
+  <text x="250" y="18" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="10px" fill="#64748b">
+    4 vertices (components) · 6 edges (constraints)
+  </text>
+  
+</svg>
